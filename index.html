@@ -11,7 +11,35 @@
     <link rel="apple-touch-icon" href="images/logoo512.png">
 </head>
 <body>
-    <p>Hi my name is Rares</p>
+    <main>
+        <div id = "#wrapper-out">
+            <h1 class = "title">barberGo</h1>
+            <h2 class = "description">Appointments for haircuts & others</h2>
+            <div id = "wrapper">
+                <ul>
+                    <li><img src = "images/logoo512.png" alt = "barberGo-icon" class = "entry-screen logo"></li>
+                    <li><button type = "button" class = "entry-screen button" data-modal-target = "#login-modal">Log In</button></li>
+                    <li><button type="button" class = "entry-screen button">Register</button></li>
+                    <li><a href = "forgot_pass.html">Forgot your password?<br><br></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="login-modal" id="login-modal">
+            <div class="login-modal-header">
+                <div class="login-modal-title">Log In</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="login-modal-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, blanditiis?
+            </div>
+        </div>
+        <div id="overlay">
+            
+        </div>
+    </main>
+    
     <script src="src/index.js"></script>
+    <script src="src/login.js"></script>
 </body>
 </html>
