@@ -36,12 +36,12 @@ body {
   margin: -15% 70%;
 }
 
-ul {
-  list-style-type: none;
+#wrapper img {
+  size: 20% 20%;
 }
 
-li .logo-comp {
-  text-align: center;
+ul {
+  list-style-type: none;
 }
 
 a {
@@ -145,4 +145,4 @@ a {
   .title {
     font-size: 4.5em;
   }
-} 
+}
