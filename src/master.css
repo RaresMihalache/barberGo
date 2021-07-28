@@ -274,6 +274,12 @@ input[type="submit"]:hover {
     margin: 10%;
     width: 90%;
   }
+  .col-25 {
+    width: 40%;
+  }
+  .col-75 {
+    width: 60%;
+  }
 }
 
 @media only screen and (max-width: 360px) {
