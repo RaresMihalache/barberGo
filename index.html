@@ -19,8 +19,8 @@
                 <ul>
                     <li><img src = "images/haircut-logo512.png" alt = "barberGo-icon" class = "entry-screen logo"></li>
                     <li><button type = "button" class = "entry-screen button" data-modal-target = "#login-modal">Log In</button></li>
-                    <li><button type="button" class = "entry-screen button">Register</button></li>
-                    <li><a href = "forgot_pass.html">Forgot your password?<br><br></a></li>
+                    <li><button type="button" class = "entry-screen button" data-modal-target="#register-modal">Register</button></li>
+                    <li><a href = "#" data-modal-target="#forgot-modal">Forgot your password?<br><br></a></li>
                 </ul>
             </div>
         </div>
@@ -31,9 +31,99 @@
                 <button data-close-button class="close-button">&times;</button>
             </div>
             <div class="login-modal-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, blanditiis?
+                <form action = "/login_page.php">
+                    <div class = "row">
+                        <div class = "col-25">
+                            <label for = "email-log">E-Mail:</label>
+                        </div>
+                        <div class = "col-75">
+                            <input type="text" id="email-log" name="email" placeholder="E-mail-ul dvs.">
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-25">
+                            <label for="password-log">Parola:</label>
+                        </div>
+                        <div class = "col-75">
+                            <input type="text" id="password-log" name="password" placeholder="Parola dvs.">
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <input type="submit" value="Log In">
+                    </div>
+                </form>
             </div>
         </div>
+
+        <div class = "register-modal" id = "register-modal">
+            <div class = "register-modal-header">
+                <div class="register-modal-title">Register</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="register-modal-body">
+                <form action = "/register_page.php">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">Nume: </label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="fname" placeholder="Numele dvs.">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Prenume: </label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="lname" placeholder="Prenumele dvs.">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="email-reg">E-Mail: </label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="email-reg" name="email-reg" placeholder="E-mail-ul dvs.">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="pass-reg">Nume: </label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="pass-reg" name="pass-reg" placeholder="Parola dvs.">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Register!">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div class = "forgot-modal" id ="forgot-modal">
+            <div class = "forgot-modal-header">
+                <div class = "forgot-modal-title">Forgot password</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="forgot-modal-body">
+                <form action="/forgot_page.php">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="email-fg-pass">E-Mail:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="email-fg-pass" name="email-fg-pass" placeholder="E-mail-ul dvs.">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Send e-mail!">
+                    </div>
+                </form>
+            </div>
+        </div>
+
         <div id="overlay">
             
         </div>

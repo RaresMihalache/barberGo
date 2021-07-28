@@ -12,7 +12,7 @@ openLogInButton.forEach(button => {
 
 closeLogInButton.forEach(button => {
     button.addEventListener('click', () => {
-        const modal = button.closest('.login-modal');
+        const modal = button.closest('.login-modal') || button.closest('.register-modal') || button.closest('.forgot-modal');
         closeModal(modal);
     })
 })
